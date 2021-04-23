@@ -9,7 +9,7 @@ Rather than travel down to the box several times a day, I used this to send me a
 ## Software you'll need
 - this repository (specifically the .sh and .service files).
 - Ntfy - a cli tool for sending notifications to various services. https://ntfy.readthedocs.io/en/latest/
-- A Raspberry PI (zer w preferred, but any wifi capable pi can work).  
+- A Raspberry PI (zero w preferred, but any wifi capable pi can work).  
 - A battery power supply
 - A wifi signal that can be picked up from wherever this is placed. 
 - A magnetic switch that can work with a Normally Open circuit.
@@ -41,6 +41,7 @@ network={
 8. Now, you can copy the files from the repo into the pi.
 
 `scp mailbox_activity_script.sh pi@<your local pi ip address>:~/`
+
 `scp sendMailboxAct.service pi@<your local pi ip address>:~/`
 
 9. Once copied over, ssh back into your pi.
